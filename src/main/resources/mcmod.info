@@ -1,0 +1,16 @@
+[
+{
+  "modid": "cleverfactories",
+  "name": "Clever Factories",
+  "description": "...",
+  "version": "0.1",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Technici4n"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
