@@ -45,16 +45,16 @@ public class TileEntityRailCurveRenderer extends TileEntitySpecialRenderer
         // Start rendering
         GL11.glPushMatrix();
         // Starting point
-        GL11.glTranslatef( (float) x + 0.5F, (float) y + 1.5F, (float) z + 0.5F );
-        rotateByMetaDataAndConnections( te.getBlockMetadata(), (TileEntityRailCurve) te );
-        ResourceLocation textures = ( new ResourceLocation( Resources.LOCATION_TEXTURE_RAIL_CURVE ) );
+        GL11.glTranslatef( ( float ) x + 0.5F, ( float ) y + 1.5F, ( float ) z + 0.5F );
+        rotateByMetaDataAndConnections( te.getBlockMetadata(), ( TileEntityRailCurve ) te );
+        ResourceLocation textures = ( new ResourceLocation( Resources.Blocks.LOCATION_TEXTURE_RAIL_CURVE ) );
         // Bind the texture
         Minecraft.getMinecraft().renderEngine.bindTexture( textures );
 
         GL11.glPushMatrix();
         GL11.glRotatef( 180F, 0.0F, 0.0F, 1.0F );
         // Very important
-        this.model.render( (Entity) null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F );
+        this.model.render( ( Entity ) null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F );
         // Stop rendering for both PushMatrix
         GL11.glPopMatrix();
         GL11.glPopMatrix();

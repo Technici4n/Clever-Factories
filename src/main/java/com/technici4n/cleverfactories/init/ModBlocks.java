@@ -7,9 +7,7 @@ import com.technici4n.cleverfactories.reference.Names;
 import com.technici4n.cleverfactories.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-import java.sql.Ref;
-
-@GameRegistry.ObjectHolder(Reference.MOD_ID)
+@GameRegistry.ObjectHolder( value = Reference.MOD_ID )
 public class ModBlocks
 {
     public static final BlockRailStraight railStraight = new BlockRailStraight();
@@ -19,8 +17,8 @@ public class ModBlocks
 
     public static void init()
     {
-        GameRegistry.registerBlock(railStraight, Names.Blocks.RAIL_STRAIGHT);
-        GameRegistry.registerBlock(railCurve, Names.Blocks.RAIL_CURVE);
+        GameRegistry.registerBlock( railStraight, Names.Blocks.RAIL_STRAIGHT );
+        GameRegistry.registerBlock( railCurve, Names.Blocks.RAIL_CURVE );
 
         GameRegistry.registerBlock( computerCube, Names.Blocks.COMPUTER_CUBE );
     }

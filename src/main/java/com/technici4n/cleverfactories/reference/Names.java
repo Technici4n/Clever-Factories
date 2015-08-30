@@ -12,6 +12,13 @@ public class Names
 
     public class Entities
     {
-        public static final String ROBOT = "robot";
+        public static final String ROBOT_BASE = "robotBase";
+    }
+
+    public class Items
+    {
+        public static final String WRENCH = "wrench";
+
+        public static final String ROBOT_BASE = "robotBase";
     }
 }

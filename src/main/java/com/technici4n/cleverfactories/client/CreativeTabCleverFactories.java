@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 
 public class CreativeTabCleverFactories
 {
-    public static CreativeTabs TAB_CF = new CreativeTabs(Reference.MOD_ID)
+    public static CreativeTabs TAB_CF = new CreativeTabs( Reference.MOD_ID )
     {
         @Override
         public Item getTabIconItem()

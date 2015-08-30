@@ -14,11 +14,26 @@ public class CleverFactoriesUtils
             yaw += 360;
         }
         yaw = yaw % 360;
-        if( yaw < 45 ) return ForgeDirection.SOUTH;
-        else if( yaw < 135 ) return ForgeDirection.WEST;
-        else if( yaw < 225 ) return ForgeDirection.NORTH;
-        else if( yaw < 315 ) return ForgeDirection.EAST;
+        if( yaw < 45 )
+        {
+            return ForgeDirection.SOUTH;
+        }
+        else if( yaw < 135 )
+        {
+            return ForgeDirection.WEST;
+        }
+        else if( yaw < 225 )
+        {
+            return ForgeDirection.NORTH;
+        }
+        else if( yaw < 315 )
+        {
+            return ForgeDirection.EAST;
+        }
 
-        else return ForgeDirection.SOUTH;
+        else
+        {
+            return ForgeDirection.SOUTH;
+        }
     }
 }

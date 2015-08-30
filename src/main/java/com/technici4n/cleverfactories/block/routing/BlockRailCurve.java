@@ -1,11 +1,9 @@
 package com.technici4n.cleverfactories.block.routing;
 
-import com.technici4n.cleverfactories.block.BlockBaseCleverFactories;
 import com.technici4n.cleverfactories.tileentity.routing.TileEntityRailCurve;
 import com.technici4n.cleverfactories.util.CleverFactoriesUtils;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -15,12 +13,11 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
-public class BlockRailCurve extends BlockBaseCleverFactories implements ITileEntityProvider
+public class BlockRailCurve extends BlockRailBase implements ITileEntityProvider
 {
     public BlockRailCurve()
     {
         super( Material.iron );
-        setBlockBounds( 0F, 0.8125F, 0F, 1F, 1F, 1F );
     }
 
     @Override
@@ -130,7 +127,7 @@ public class BlockRailCurve extends BlockBaseCleverFactories implements ITileEnt
     }
 
     @Override
-    @SideOnly(Side.CLIENT)
+    @SideOnly( Side.CLIENT )
     public void registerBlockIcons( IIconRegister icon )
     {
         // this.blockIcon = icon.registerIcon();

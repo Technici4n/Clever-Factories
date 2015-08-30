@@ -1,6 +1,5 @@
 package com.technici4n.cleverfactories.block.routing;
 
-import com.technici4n.cleverfactories.block.BlockBaseCleverFactories;
 import com.technici4n.cleverfactories.tileentity.routing.TileEntityRailStraight;
 import com.technici4n.cleverfactories.util.CleverFactoriesUtils;
 import cpw.mods.fml.relauncher.Side;
@@ -14,16 +13,15 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
-public class BlockRailStraight extends BlockBaseCleverFactories implements ITileEntityProvider
+public class BlockRailStraight extends BlockRailBase implements ITileEntityProvider
 {
     public BlockRailStraight()
     {
-        super(Material.iron);
-        setBlockBounds(0F, 0.8125F, 0F, 1F, 1F, 1F);
+        super( Material.iron );
     }
 
     @Override
-    public TileEntity createNewTileEntity(World world, int meta)
+    public TileEntity createNewTileEntity( World world, int meta )
     {
         return new TileEntityRailStraight();
     }
@@ -47,15 +45,15 @@ public class BlockRailStraight extends BlockBaseCleverFactories implements ITile
     }
 
     @Override
-    public void onBlockPlacedBy(World w, int x, int y, int z, EntityLivingBase entity, ItemStack is)
+    public void onBlockPlacedBy( World w, int x, int y, int z, EntityLivingBase entity, ItemStack is )
     {
         ForgeDirection dir = CleverFactoriesUtils.getDirectionFacing2D( entity );
-        w.setBlockMetadataWithNotify(x, y, z, dir.ordinal(), 2);
+        w.setBlockMetadataWithNotify( x, y, z, dir.ordinal(), 2 );
     }
 
     @Override
-    @SideOnly(Side.CLIENT)
-    public void registerBlockIcons(IIconRegister icon)
+    @SideOnly( Side.CLIENT )
+    public void registerBlockIcons( IIconRegister icon )
     {
         // this.blockIcon = icon.registerIcon();
     }

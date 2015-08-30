@@ -7,7 +7,7 @@ public class PathingNodeLocation
     public int z;
     private PathingNode node;
 
-    public PathingNodeLocation(int x, int y, int z, PathingNode node)
+    public PathingNodeLocation( int x, int y, int z, PathingNode node )
     {
         this.x = x;
         this.y = y;
@@ -20,7 +20,7 @@ public class PathingNodeLocation
         return node;
     }
 
-    public boolean equals(PathingNodeLocation loc)
+    public boolean equals( PathingNodeLocation loc )
     {
         return x == loc.x && y == loc.y && z == loc.z;
     }

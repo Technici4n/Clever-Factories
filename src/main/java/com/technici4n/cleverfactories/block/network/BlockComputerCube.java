@@ -17,7 +17,7 @@ public class BlockComputerCube extends BlockBaseCleverFactories implements ITile
 
     }
 
-    public TileEntity createNewTileEntity(World w, int meta)
+    public TileEntity createNewTileEntity( World w, int meta )
     {
         return new TileEntityComputerCube();
     }
