@@ -16,6 +16,6 @@ public class TileEntityRailCurve extends TileEntity implements INodeProvider
     @Override
     public NetworkNode getNetworkNode()
     {
-        return null;
+        return node;
     }
 }

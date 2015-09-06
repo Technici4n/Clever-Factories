@@ -1,7 +1,6 @@
 package com.technici4n.cleverfactories.util;
 
 import com.technici4n.cleverfactories.network.pathfinding.PathingNode;
-import net.minecraftforge.common.util.ForgeDirection;
 
 public class NodeUtils
 {
@@ -14,8 +13,8 @@ public class NodeUtils
         n2.connectedNodes.add( n1 );
     }
 
-    public static PathingNode nextInDir( PathingNode from, ForgeDirection dir )
+    /*public static PathingNode nextInDir( PathingNode from, ForgeDirection dir )
     {
         // TODO
-    }
+    }*/
 }

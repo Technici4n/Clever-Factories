@@ -29,12 +29,6 @@ public class EntityRobotBase extends EntityLiving implements ICFWrenchable
     }
 
     @Override
-    public void onUpdate()
-    {
-        this.setRotation( this.rotationYaw + 18, this.rotationPitch );
-    }
-
-    @Override
     public boolean isEntityInvulnerable()
     {
         return true;

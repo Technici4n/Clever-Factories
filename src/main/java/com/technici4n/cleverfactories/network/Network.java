@@ -1,5 +1,7 @@
 package com.technici4n.cleverfactories.network;
 
+import net.minecraft.world.World;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,9 +9,11 @@ public class Network
 {
     public List< NetworkNode > nodes;
     public final int x, y, z;
+    public World w;
 
-    public Network( int x, int y, int z )
+    public Network( World w, int x, int y, int z )
     {
+        this.w = w;
         this.x = x;
         this.y = y;
         this.z = z;
@@ -21,6 +25,12 @@ public class Network
     {
         node.network = this;
         this.nodes.add( node );
+    }
+
+    public void removeNode( NetworkNode node )
+    {
+        node.network = null;
+        this.nodes.remove( node );
     }
 
     public void refreshAll()

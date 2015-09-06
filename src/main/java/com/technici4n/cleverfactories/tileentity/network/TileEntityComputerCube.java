@@ -9,6 +9,6 @@ public class TileEntityComputerCube extends TileEntity
 
     public TileEntityComputerCube()
     {
-        this.network = new Network( xCoord, yCoord, zCoord );
+        this.network = new Network( worldObj, xCoord, yCoord, zCoord );
     }
 }
